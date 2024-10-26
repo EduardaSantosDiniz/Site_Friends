@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu Personagem de Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Página Inicial -->
+        <div id="welcome-page" class="page active">
+            <!-- Adicionando a imagem do logo do Friends -->
+            <img src="/fotos/friends-logo.png" alt="Logo Friends" class="logo">
+            <h1>Descubra seu Personagem de Friends!</h1>
+            <p>Quem você seria no universo de Friends? Responda algumas perguntas e descubra!</p>
+            <button id="start-btn" class="btn">Começar Quiz</button>
+        </div>
+
+        <!-- Página do Questionário -->
+        <div id="quiz-page" class="page hidden">
+            <h2>Questionário</h2>
+            <div id="question-container">
+                <p id="question-text" class="question-text"></p>
+                <div id="options" class="options">
+                    <button class="option-B tn btn" id="option1"></button>
+                    <button class="option-Btn btn" id="option2"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de Resultados -->
+        <div id="result-page" class="page hidden">
+            <h2>Seu Resultado:</h2>
+            <p id="result-character" class="result-character"></p>
+            <!-- Aqui será exibida a imagem do personagem -->
+            <img id="result-image" alt="Imagem do Personagem" class="result-image">
+            <p id="result-description" class="result-description"></p>
+            <button id="reset-btn" class="btn">Refazer Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

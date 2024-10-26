@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0E68C; /* Tom de fundo leve e alegre */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Principal */
+#container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff; /* Fundo branco para o conteúdo */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos da Página de Boas-vindas */
+#welcome-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #6A5ACD; /* Azul escuro */
+    border-bottom: 5px solid #E94E77; /* Rosa vibrante */
+}
+
+.logo {
+    max-width: 70%; /* Ajusta a largura da imagem */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos da Página do Questionário */
+#question-container {
+    margin-top: 20px;
+}
+
+.question-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2A2B86; /* Azul escuro */
+}
+
+/* Opções de Resposta */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+/* Estilos dos Botões */
+.btn {
+    padding: 15px 20px;
+    background-color: #8A2BE2; /* Roxo vibrante */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efeito de transição */
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #BA55D3; /* Tom de roxo mais claro no hover */
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+/* Estilos Específicos para o Botão "Começar Quiz" */
+#start-btn {
+    background-color: #6A5ACD; /* Azul escuro */
+    font-size: 1.3em; /* Tamanho maior para o botão de começar */
+}
+
+#start-btn:hover {
+    background-color: #836FFF; /* Tom de azul mais claro no hover */
+}
+
+/* Estilos da Página de Resultados */
+#result-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFB6C1; /* Rosa claro */
+    border-top: 5px solid #8A2BE2; /* Roxo vibrante */
+}
+
+.result-character {
+    font-size: 2em;
+    color: #8B0000; /* Vermelho escuro */
+    margin-top: 20px;
+}
+
+.result-description {
+    font-size: 1.2em;
+    color: #555; /* Cinza escuro */
+    margin: 10px 0;
+}
+
+.result-image {
+    max-width: 70%; /* Ajusta a largura da imagem do resultado */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+}
+
+/* Estilos para páginas ocultas e ativas */
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block; /* Isso pode ser ajustado se necessário */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .btn {
+        font-size: 1em; /* Ajusta o tamanho da fonte dos botões em telas pequenas */
+    }
+
+    .result-character {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte em telas pequenas */
+    }
+
+    .question-text {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte em telas pequenas */
+    }
+}

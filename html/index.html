@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - Personagens</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com Menu -->
+  <header>
+    <nav>
+      <a href="/html/index.html">Início</a>
+      <a href="/html/monica.html">Mônica</a>
+      <a href="/html/chandler.html">Chandler</a>
+      <a href="/html/rachel.html">Rachel</a>
+      <a href="/html/ross.html">Ross</a>
+      <a href="/html/phoebe.html">Phoebe</a>
+    </nav>
+  </header>
+
+  <!-- Container Principal -->
+  <div class="container">
+    <!-- Texto no Lado Esquerdo -->
+    <div class="texto">
+      <h1>Conheça os Personagens de Friends</h1>
+      <p>Explore a personalidade de cada personagem e descubra curiosidades sobre o elenco da série.</p>
+      <button onclick="verElenco()">Elenco</button>
+    </div>
+
+    <!-- Imagem no Lado Direito -->
+    <div class="imagem">
+      <img src="/fotos/foto.avif" alt="Elenco de Friends">
+    </div>
+  </div>
+
+  <!-- Nova Seção: Teste de Personagem -->
+  <div class="quiz-section">
+    <h2>Descubra qual personagem de Friends você seria!</h2>
+    <p>Curioso para saber com qual personagem você mais se parece? Faça nosso teste e descubra!</p>
+    <button onclick="fazerTeste()">Fazer o Teste</button>
+  </div>
+
+  <script>
+
+    function verElenco() {
+      window.location.href = "/html/elenco.html"; // Redireciona para a página do elenco
+    }
+
+    function fazerTeste() {
+      window.location.href = "/quiz/quiz.html"; // Exemplo de site com quizzes (substitua se necessário)
+    }
+  </script>
+
+</body>
+</html>

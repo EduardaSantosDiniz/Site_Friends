@@ -1,0 +1,113 @@
+/* Corpo da Página */
+body {
+    background-color: #f5e97c; /* Amarelo claro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6b4ead; /* Roxo */
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff5a5f; /* Vermelho claro no hover */
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6b4ead; /* Roxo */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
+    border-bottom: 5px solid #ff5a5f; /* Borda inferior vermelha */
+}
+
+/* Texto no Lado Esquerdo */
+.texto {
+    max-width: 40%;
+    color: white;
+}
+
+.texto h1 {
+    margin-bottom: 10px;
+}
+
+.texto p {
+    margin-bottom: 20px;
+}
+
+/* Imagem no Lado Direito */
+.imagem img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Botão */
+button {
+    background-color: #5c48a2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4e3b8b;
+}
+
+/* Blocos de Conversa */
+.conversas {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bloco-conversa {
+    background-color: #6b4ead;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    width: 45%;
+}
+
+.bloco-conversa.esquerda {
+    align-self: flex-start;
+}
+
+.bloco-conversa.direita {
+    align-self: flex-end;
+}
+.imagem-final {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
+}
